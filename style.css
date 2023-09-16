@@ -1,0 +1,177 @@
+@font-face {
+  font-family: SF;
+  src: url(fonts/SFNSText-Medium.otf);
+}
+
+@font-face {
+  font-family: SFbold;
+  src: url(fonts/SFNSDisplay-Black.otf);
+}
+
+* {
+  margin: 0;
+  font-family: SF; 
+}
+
+#page {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('imgs/_\ \(1\).gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: .2s ease;
+    -webkit-transition: .2s ease;
+    color: white;
+}
+
+#horario-conteiner {
+  background-color: rgba(0, 0, 255, 0);
+  width: 90vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+#contador {
+  font-family: SFbold;
+  font-weight: 100;
+  font-size: 60px;
+  transition: .2s ease;
+  -webkit-transition: .2s ease;
+}
+
+
+#date-conteiner {
+  display: block;
+}
+
+#config-btn {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 5px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#config-cont {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  justify-content: end;
+  align-items: center;
+}
+
+#config {
+  transform: right 0.3s ease;
+  color: rgb(15, 15, 15);
+  background-color: rgb(248, 248, 248);
+  height: 82%;
+  width: 400px;
+  border-radius: 7px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.422);
+  padding: 10px;
+  margin: 20px;
+}
+
+#upside-config {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+    flex-direction: row;
+}
+
+#settingsTittle {
+  font-size: 25px; 
+  margin: 0;
+}
+
+#close-configBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+}
+
+#background-configs {
+  height: auto;
+  width: auto;  
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.043);
+  border-radius: 7px;
+  margin: 10px 0 10px 0;
+}
+
+#background-previewImg {
+  width: 100%;
+  height: 100%;
+  max-height: 400px;
+  border-radius: 7px;
+  margin: 10px 0;
+}
+
+#setback-input {
+  display: none;
+  margin-top: 2000px;
+  
+}
+
+#label-setback {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  width: 120px;
+  background-color: rgba(0, 0, 255, 0.119);
+  color: blue;
+  padding: 5px 1px;
+  border-radius: 5px;
+  cursor: pointer;  
+  transition: background-color .2s ease, color .2s ease;
+}
+
+#label-setback:is(:hover, :active, :focus) {
+  background-color: blue;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  
+  #config-cont {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #config {
+    height: 80%;
+    width: 80%;
+    padding: 10px;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  
+  #config-cont {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #config {
+    height: 70%;
+    width: 70%;
+    padding: 10px;
+  }
+  
+}
