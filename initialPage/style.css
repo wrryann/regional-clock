@@ -1,11 +1,11 @@
 @font-face {
   font-family: SF;
-  src: url(fonts/SFNSText-Medium.otf);
+  src: url(/fonts/SFNSText-Medium.otf);
 }
 
 @font-face {
   font-family: SFbold;
-  src: url(fonts/SFNSDisplay-Black.otf);
+  src: url(/fonts/SFNSDisplay-Black.otf);
 }
 
 * {

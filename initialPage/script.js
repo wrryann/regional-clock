@@ -64,4 +64,3 @@ function setBackground() {
     window.alert('only select images or gifs');
   }
 };
-console.log
