@@ -61,6 +61,6 @@ function setBackground() {
     
     reader.readAsDataURL(file);
   } else {
-    window.alert('only select images or gifs');
+    window.alert('select your image or gif');
   }
 };
