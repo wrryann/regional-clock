@@ -53,13 +53,27 @@ function setBackground() {
     var reader = new FileReader();
 
     reader.onloadend = function () {
-      background.style.backgroundImage = "url(" + reader.result + ")";
-      backgroundPreviewImg.src = reader.result;
+      var imageUrl = reader.result;
+
+      background.style.backgroundImage = "url(" + imageUrl + ")";
+      backgroundPreviewImg.src = imageUrl;
+
+      localStorage.setItem("backgroundImage", imageUrl);
     };
 
     reader.readAsDataURL(file);
   } else {
-    window.alert("select your image or gif");
+    window.alert("Selecione sua imagem ou gif");
   }
 }
 
+window.onload = function () {
+  var savedBackground = localStorage.getItem("backgroundImage");
+  if (savedBackground) {
+    var background = document.querySelector("#page");
+    var backgroundPreviewImg = document.querySelector("#background-previewImg");
+    
+    background.style.backgroundImage = "url(" + savedBackground + ")";
+    backgroundPreviewImg.src = savedBackground;
+  }
+};
