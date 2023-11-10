@@ -29,7 +29,7 @@
   color: white;
 }
 
-#horario-conteiner {
+#time-conteiner {
   background-color: rgba(0, 0, 255, 0);
   width: 90vw;
   height: auto;
@@ -39,7 +39,7 @@
   flex-direction: row;
 }
 
-#contador {
+#time {
   font-family: SFbold;
   font-weight: 100;
   font-size: 60px;
