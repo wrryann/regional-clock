@@ -51,21 +51,30 @@
   display: block;
 }
 
-#cust-item {
+
+#cust-items {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   position: fixed;
   top: 0;
   right: 0;
-  width: 30px;
+  width: 60px;
   height: 30px;
   margin: 10px;
   z-index: 999;
 }
 
+#add-reminder {
+  margin: 2px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 999;
+}
+
 #config-btn {
-  margin: 5px;
+  margin: 2px;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -94,8 +103,8 @@
 #config {
   transform: right 0.3s ease;
   color: rgb(255, 255, 255);
-  border: 2px solid rgba(0, 0, 0, 0.619);
-  background-color: rgba(31, 31, 31, 0.858);
+  border: 2px solid rgba(87, 87, 87, 0.619);
+  background-color: rgba(31, 31, 31, 0.652);
   backdrop-filter: blur(50px);
   height: auto;
   max-height: 83%;
@@ -121,7 +130,7 @@
 }
 
 .hr-menu {
-  border: 1px solid rgba(0, 0, 0, 0.292);
+  border: 2px solid rgba(87, 87, 87, 0.619);
   margin: 10px;
 }
 
