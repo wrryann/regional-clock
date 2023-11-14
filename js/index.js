@@ -21,7 +21,6 @@ setInterval(getDate, 1000)
 
 
 
-
   let configBtn = document.getElementById("config-btn");
   let configCont = document.getElementById("config-cont");
   

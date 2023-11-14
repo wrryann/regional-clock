@@ -40,8 +40,7 @@
 }
 
 #time {
-  font-family: SFbold;
-  font-weight: 100;
+  font-family: SF;
   font-size: 60px;
   transition: 0.2s ease;
   -webkit-transition: 0.2s ease;
@@ -141,7 +140,8 @@
 #background-configs {
   height: auto;
   width: auto;
-  background-color: rgba(0, 0, 0, 0.043);
+  padding: 1.1rem;
+  background-color: rgba(0, 0, 0, 0.306);
   border-radius: 7px;
 }
 
